@@ -104,8 +104,17 @@ function useOperator(operator: string) {
 }
 
 function addDecimal() {
-  console.log('decimal');
-  return 'test';
+  if (awaitNextValue) {
+    calculatorDisplay.textContent = number;
+    inputExpression = number;
+    awaitNextValue = false;
+  } else {
+    const displayValue = calculatorDisplay.textContent;
+  }
+  //If no decimal, add one
+  if (!calculatorDisplay.textContent.includes('.')) {
+    calculatorDisplay.textContent = `${calculatorDisplay.textContent}.`;
+  }
 }
 
 function del() {

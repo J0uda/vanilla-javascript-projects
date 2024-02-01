@@ -64,7 +64,7 @@ body {
   flex-direction: column;
   padding: 23px;
   width: clamp(300px, 50%, 500px);
-  margin-left: 32%;
+  margin-left: 27%;
 }
 
 .header {
@@ -157,25 +157,6 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: clamp(24px, 4vw, 50px);
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: hsl(285, 91%, 52%);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(198, 12, 12);
 }
 
 .calculator-wrapper {
