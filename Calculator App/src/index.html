@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calc">
+      <div class="header">
+        <h1 class="heading">calc</h1>
+
+        <div class="heading-wrapper">
+          <p class="text">theme</p>
+
+          <div>
+            <div class="toggle-wrapper">
+              <p class="text number">1</p>
+              <p class="text number">2</p>
+              <p class="text number">3</p>
+            </div>
+
+            <div class="toggle">
+              <input class="theme" type="radio" />
+              <label id="theme-1" for="theme1" class="toggle-label"></label>
+              <input class="theme" type="radio" />
+              <label id="theme-2" for="theme2" class="toggle-label"></label>
+              <input class="theme" type="radio" />
+              <label id="theme-3" for="theme3" class="toggle-label"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="display-container" id="display-container">
+        <div class="display-first-line"></div>
+        <div class="display-second-line" id="calculator-display">0</div>
+      </div>
+
+      <div class="calculator-wrapper">
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button class="del-btn" value="del">del</button>
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button class="operator" value="+">+</button>
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button class="operator" value="-">-</button>
+        <button class="decimal" value=".">.</button>
+        <button value="0">0</button>
+        <button class="operator" value="/">/</button>
+        <button class="operator" value="*">*</button>
+        <button class="reset-btn operator" id="reset-btn" value="reset">
+          reset
+        </button>
+        <button class="equal-btn operator" value="=">=</button>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
